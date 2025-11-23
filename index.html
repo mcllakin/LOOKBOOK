@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Lookbook Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 안내 영역 -->
+  <header id="header">
+    <div class="brand">LIVMOON STUDIO · LOOK 01</div>
+    <div class="hint">마우스를 드래그하면 회전, 휠로 확대/축소할 수 있습니다.</div>
+  </header>
+
+  <!-- 3D 뷰어 캔버스 -->
+  <main id="viewer-container">
+    <canvas id="viewer"></canvas>
+  </main>
+
+  <!-- Supersplat 번들(index.js) + 우리 뷰어 스크립트 -->
+  <script src="index.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>
