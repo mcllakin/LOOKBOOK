@@ -37,7 +37,7 @@ async function init() {
   });
 
   // 4. 3DGS 모델 로드 (파일명은 네 파일명으로 수정!)
-  await loadSplatModel("model.splat"); // 또는 "model.ply"
+  await loadSplatModel("test_2.splat");
 
   // 5. 리사이즈 대응
   window.addEventListener("resize", onWindowResize);
