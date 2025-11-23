@@ -1,0 +1,68 @@
+/* 전체 리셋 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 배경: 밝은 그레이 */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  overflow: hidden;
+}
+
+/* 상단 안내 영역 */
+#header {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 10;
+  font-size: 12px;
+}
+
+#header .brand {
+  font-weight: 600;
+}
+
+#header .hint {
+  opacity: 0.7;
+}
+
+/* 3D 뷰어 컨테이너 */
+#viewer-container {
+  position: absolute;
+  inset: 0;
+  padding: 56px 16px 16px; /* 위쪽은 헤더 때문에 여유 */
+}
+
+/* 캔버스는 카드처럼 */
+#viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  background: #e1e1e1; /* 캔버스 뒤 배경 */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* 혹시 Supersplat 기본 UI가 있을 경우 강제 숨김 */
+.toolbar,
+.sidebar,
+.timeline,
+.splat-data-panel {
+  display: none !important;
+}
